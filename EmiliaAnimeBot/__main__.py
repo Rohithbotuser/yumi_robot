@@ -21,7 +21,7 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-EMILIA_IMG = "https://telegra.ph/file/ecbbd41d6a85e944de587.jpg"
+EMILIA_IMG = "https://telegra.ph/file/1682027883777783a43a9.mp4"
 
 
 def get_readable_time(seconds: int) -> str:
@@ -54,16 +54,16 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` [👸](https://telegra.ph/file/ecbbd41d6a85e944de587.jpg) 
-`My name is` *❤️ ʏᴜᴍɪ ❤️*`
-`I am ❤️ ʏᴜᴍɪ ❤️group management bot.`
+`Hey there!` [🧑](https://telegra.ph/file/1682027883777783a43a9.mp4) 
+`MY NAME IS ` *VALT AOI*`
+`I am BEYBLADE THEMED group management bot.`
 You can find my list of available commands with` /help. *🔐Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="【✗ᴀᴅᴅ ʏᴜᴍɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ✗ 】",url="t.me/yumi_RoBot?startgroup=true"
+            text="【✗ᴀᴅᴅ VALT AOI ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ✗ 】",url="t.me/VALTAOITHEBOT?startgroup=true"
         ),
     ],
     [
@@ -83,12 +83,12 @@ buttons = [
          
     [
        InlineKeyboardButton(
-           text="【 😈Vᴇɢᴇᴛᴀ😈 】", url="https://t.me/VEGETAROBOT"
+           text="【CHECK MY FRIEND 】", url="http://t.me/Aigerakabanethebladerbot"
          ),
     ],
     [
         InlineKeyboardButton(
-          text="【 ✗Cʀᴇᴀᴛᴇʀ✗ 】", url="https://t.me/ctzfamily"
+          text="【 ✗Cʀᴇᴀᴛᴇʀ✗ 】", url="https://t.me/ROHITH_NO_1"
         ),
      
     ],
@@ -96,12 +96,12 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [❤️ʏᴜᴍɪ!]("https://telegra.ph/file/ecbbd41d6a85e944de587.jpg") 
+`Hey there! My name is` [VALT AOI!]("https://telegra.ph/file/1682027883777783a43a9.mp4") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! \n`Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """
 Heya, glad to hear you want to donate!
-I'd Like you to Donate that Money to @ctzfamily. 
+I'd Like you to Donate that Money to @ROHITH_NO_1. 
 Thanks!
 """
 
@@ -213,7 +213,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "ʏᴇᴀ ❤️ʏᴜᴍɪ ʀᴇᴀᴅʏ ᴡʜᴀᴛ ɪ ᴅᴏ❤\nI am Awake Since: <code>{}</code>".format(
+            EMILIA_IMG, caption= "ʏᴇᴀ valt aoi ʀᴇᴀᴅʏ ᴡʜᴀᴛ ɪ ᴅᴏ❤\nI am Awake Since: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
                   InlineKeyboardButton(text="【 ✗Sᴜᴘᴘᴏʀᴛ✗ 】", url="https://t.me/pigasusSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="【 ✗Cʀᴇᴀᴛᴇʀ✗ 】", url="https://t.me/ctzfamily
+                  InlineKeyboardButton(text="【 ✗Cʀᴇᴀᴛᴇʀ✗ 】", url="https://t.me/ROHITH_NO_1
                   ]
                 ]
             ),
@@ -357,14 +357,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *❤️ʏᴜᴍɪ*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *VALT AOI*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *❤️ʏᴜᴍɪ*, let us know at .""",
+                 \n\nIf you have any question about *VALT AOI*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -390,7 +390,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👩‍💼 I'm *❤️ʏᴜᴍɪ*
+            text=""" Hi..👩‍💼 I'm *VALT AOI*
                  \nMy Source Code Can be Found at Github at this [Link](https://github.com/ctzfamily/yumi_robot""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -691,7 +691,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Emilia is Back Online💼")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "VALT AOI is Back with fban power")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
